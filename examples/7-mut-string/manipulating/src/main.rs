@@ -1,7 +1,9 @@
+pub mod helper;
+
 fn main() {
     let sentence = "the quick brown fox jumps over the lazy dog".to_string();
     // Use slicing to get the first three characters of the sentence
-    //println!("{}", &sentence[0..=4]);
+    println!("{}", &sentence[0..=4]);
 
     // concatenate using format!
     let description = format!("Title: Quick story\n{}", sentence);
@@ -23,3 +25,5 @@ fn main() {
     let reversed = sentence.chars().rev().collect::<String>();
     println!("{}", reversed);
 }
+
+
